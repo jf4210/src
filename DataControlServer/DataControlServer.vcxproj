@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B377C3F0-B227-4FD6-A2C4-0F462AF7DEE5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DataControlServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\obj\$(ProjectName)\$(Configuration)</OutDir>
+    <IntDir>..\..\obj\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\obj\$(ProjectName)\$(Configuration)</OutDir>
+    <IntDir>..\..\obj\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\common</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>..\..\bin\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>NetOperatorDll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\common</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>..\..\bin\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>NetOperatorDll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\Net_Cmd_Protocol.h" />
+    <ClInclude Include="DCSDef.h" />
+    <ClInclude Include="DecompressThread.h" />
+    <ClInclude Include="ExamServerMgr.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="ListMission.h" />
+    <ClInclude Include="ListPaperUser.h" />
+    <ClInclude Include="ListUser.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="Mission.h" />
+    <ClInclude Include="MissionFactory.h" />
+    <ClInclude Include="MissionHandleMgr.h" />
+    <ClInclude Include="MissionMgr.h" />
+    <ClInclude Include="MyCodeConvert.h" />
+    <ClInclude Include="NetCmdMgr.h" />
+    <ClInclude Include="NetIoBuffer.h" />
+    <ClInclude Include="NetIoSendBuffer.h" />
+    <ClInclude Include="NetOperatorDll.h" />
+    <ClInclude Include="NetUser.h" />
+    <ClInclude Include="PaperRecvMgr.h" />
+    <ClInclude Include="PaperUser.h" />
+    <ClInclude Include="ScanResquestHandler.h" />
+    <ClInclude Include="SendToHttpThread.h" />
+    <ClInclude Include="SysSet.h" />
+    <ClInclude Include="UserMgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DecompressThread.cpp" />
+    <ClCompile Include="ExamServerMgr.cpp" />
+    <ClCompile Include="ListMission.cpp" />
+    <ClCompile Include="ListPaperUser.cpp" />
+    <ClCompile Include="ListUser.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mission.cpp" />
+    <ClCompile Include="MissionFactory.cpp" />
+    <ClCompile Include="MissionHandleMgr.cpp" />
+    <ClCompile Include="MissionMgr.cpp" />
+    <ClCompile Include="MyCodeConvert.cpp" />
+    <ClCompile Include="NetCmdMgr.cpp" />
+    <ClCompile Include="NetIoBuffer.cpp" />
+    <ClCompile Include="NetIoSendBuffer.cpp" />
+    <ClCompile Include="NetUser.cpp" />
+    <ClCompile Include="PaperRecvMgr.cpp" />
+    <ClCompile Include="PaperUser.cpp" />
+    <ClCompile Include="ScanResquestHandler.cpp" />
+    <ClCompile Include="SendToHttpThread.cpp" />
+    <ClCompile Include="SysSet.cpp" />
+    <ClCompile Include="UserMgr.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF783C1C-C42B-49CD-B9A7-C50399C12744}</ProjectGuid>
+    <RootNamespace>ScanTool</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="scanTool.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="scanTool_r.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;.\picCtrl;..\..\common</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>..\..\bin\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>opencv_world310d.lib</AdditionalDependencies>
+      <StackReserveSize>5000000</StackReserveSize>
+      <StackCommitSize>
+      </StackCommitSize>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;.\picCtrl;..\..\common</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\md5.h" />
+    <ClInclude Include="..\..\common\NetCtrl.h" />
+    <ClInclude Include="..\..\common\Net_Cmd_Protocol.h" />
+    <ClInclude Include="..\..\common\unzip.h" />
+    <ClInclude Include="..\..\common\zip.h" />
+    <ClInclude Include="bmp2ipl.h" />
+    <ClInclude Include="DIB.h" />
+    <ClInclude Include="FileUpLoad.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="LoginDlg.h" />
+    <ClInclude Include="MakeModelDlg.h" />
+    <ClInclude Include="ModelInfoDlg.h" />
+    <ClInclude Include="ModelSaveDlg.h" />
+    <ClInclude Include="MyCodeConvert.h" />
+    <ClInclude Include="PaperInputDlg.h" />
+    <ClInclude Include="PapersInfoSaveDlg.h" />
+    <ClInclude Include="picCtrl\CvvImage.h" />
+    <ClInclude Include="picCtrl\CV_picture.h" />
+    <ClInclude Include="PicShow.h" />
+    <ClInclude Include="RecognizeThread.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScanCtrlDlg.h" />
+    <ClInclude Include="ScanTool.h" />
+    <ClInclude Include="ScanToolDlg.h" />
+    <ClInclude Include="SendFileThread.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Thread.h" />
+    <ClInclude Include="twain.h" />
+    <ClInclude Include="TwainCpp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\md5.cpp" />
+    <ClCompile Include="..\..\common\unzip.cpp" />
+    <ClCompile Include="..\..\common\zip.cpp" />
+    <ClCompile Include="bmp2ipl.cpp" />
+    <ClCompile Include="DIB.cpp" />
+    <ClCompile Include="FileUpLoad.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="MakeModelDlg.cpp" />
+    <ClCompile Include="ModelInfoDlg.cpp" />
+    <ClCompile Include="ModelSaveDlg.cpp" />
+    <ClCompile Include="MyCodeConvert.cpp" />
+    <ClCompile Include="PaperInputDlg.cpp" />
+    <ClCompile Include="PapersInfoSaveDlg.cpp" />
+    <ClCompile Include="picCtrl\CvvImage.cpp" />
+    <ClCompile Include="picCtrl\CV_picture.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PicShow.cpp" />
+    <ClCompile Include="RecognizeThread.cpp" />
+    <ClCompile Include="ScanCtrlDlg.cpp" />
+    <ClCompile Include="ScanTool.cpp" />
+    <ClCompile Include="ScanToolDlg.cpp" />
+    <ClCompile Include="SendFileThread.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp" />
+    <ClCompile Include="TwainCpp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ScanTool.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ScanTool.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ScanTool.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ScanTool.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

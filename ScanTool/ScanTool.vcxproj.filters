@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="图片控件">
+      <UniqueIdentifier>{583c6279-f862-4891-b62a-946add9e1e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="global">
+      <UniqueIdentifier>{8f1f0a37-c5c2-4a2f-abcf-5d41f0eff52a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="扫描模板制作窗口">
+      <UniqueIdentifier>{39d72771-e9d2-4d6a-885c-2e58ed4f3689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{dd01017a-fb2c-4ce8-9904-890350235ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="转码">
+      <UniqueIdentifier>{3c8736bb-b94e-4cf8-810b-e5f0ebb26be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="识别任务处理线程">
+      <UniqueIdentifier>{31436858-9f4c-460b-9157-d6f1278744a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="试卷导入窗口">
+      <UniqueIdentifier>{75fde2f7-e39a-443e-907a-403dfea8c098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BMP与IPLImage互转%28暂不用%29">
+      <UniqueIdentifier>{0593bcd7-b2fa-4e64-a26e-94adc76e7b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="扫描仪控制">
+      <UniqueIdentifier>{5015c408-94d6-41cb-856e-1520a2a8dfc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="试卷袋信息保存">
+      <UniqueIdentifier>{84d141b9-3cf7-4e0d-b374-2af94e5bef7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="扫描模板制作窗口\创建新模板信息填写窗口">
+      <UniqueIdentifier>{3113cb7f-ec76-432a-83c1-3b37bf5c445e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="扫描模板制作窗口\保存模板窗口">
+      <UniqueIdentifier>{adf0ac50-7445-4197-9b13-f8645af11156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="扫描参数控制窗口">
+      <UniqueIdentifier>{7425e5fc-435d-453e-9c69-4c7575ecac8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="文件上传">
+      <UniqueIdentifier>{fc4984e4-e9e5-456d-a617-8d12928e96b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http模块">
+      <UniqueIdentifier>{dc0be124-3baf-4aa7-ab48-2040c81e9906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="登录">
+      <UniqueIdentifier>{47d6fe8f-ddb1-4e95-a27f-ed8c72e64688}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ScanTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanToolDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="picCtrl\CV_picture.h">
+      <Filter>图片控件</Filter>
+    </ClInclude>
+    <ClInclude Include="picCtrl\CvvImage.h">
+      <Filter>图片控件</Filter>
+    </ClInclude>
+    <ClInclude Include="PicShow.h">
+      <Filter>图片控件</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeModelDlg.h">
+      <Filter>扫描模板制作窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\unzip.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\zip.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCodeConvert.h">
+      <Filter>转码</Filter>
+    </ClInclude>
+    <ClInclude Include="RecognizeThread.h">
+      <Filter>识别任务处理线程</Filter>
+    </ClInclude>
+    <ClInclude Include="PaperInputDlg.h">
+      <Filter>试卷导入窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="twain.h">
+      <Filter>扫描仪控制</Filter>
+    </ClInclude>
+    <ClInclude Include="TwainCpp.h">
+      <Filter>扫描仪控制</Filter>
+    </ClInclude>
+    <ClInclude Include="bmp2ipl.h">
+      <Filter>BMP与IPLImage互转%28暂不用%29</Filter>
+    </ClInclude>
+    <ClInclude Include="DIB.h">
+      <Filter>扫描仪控制</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanCtrlDlg.h">
+      <Filter>扫描参数控制窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="PapersInfoSaveDlg.h">
+      <Filter>试卷袋信息保存</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelInfoDlg.h">
+      <Filter>扫描模板制作窗口\创建新模板信息填写窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelSaveDlg.h">
+      <Filter>扫描模板制作窗口\保存模板窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUpLoad.h">
+      <Filter>文件上传</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>文件上传</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Net_Cmd_Protocol.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\NetCtrl.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\md5.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="SendFileThread.h">
+      <Filter>文件上传</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>登录</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ScanTool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanToolDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="picCtrl\CV_picture.cpp">
+      <Filter>图片控件</Filter>
+    </ClCompile>
+    <ClCompile Include="picCtrl\CvvImage.cpp">
+      <Filter>图片控件</Filter>
+    </ClCompile>
+    <ClCompile Include="PicShow.cpp">
+      <Filter>图片控件</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeModelDlg.cpp">
+      <Filter>扫描模板制作窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\unzip.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\zip.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCodeConvert.cpp">
+      <Filter>转码</Filter>
+    </ClCompile>
+    <ClCompile Include="RecognizeThread.cpp">
+      <Filter>识别任务处理线程</Filter>
+    </ClCompile>
+    <ClCompile Include="PaperInputDlg.cpp">
+      <Filter>试卷导入窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="TwainCpp.cpp">
+      <Filter>扫描仪控制</Filter>
+    </ClCompile>
+    <ClCompile Include="bmp2ipl.cpp">
+      <Filter>BMP与IPLImage互转%28暂不用%29</Filter>
+    </ClCompile>
+    <ClCompile Include="DIB.cpp">
+      <Filter>扫描仪控制</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanCtrlDlg.cpp">
+      <Filter>扫描参数控制窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="PapersInfoSaveDlg.cpp">
+      <Filter>试卷袋信息保存</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>global</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelInfoDlg.cpp">
+      <Filter>扫描模板制作窗口\创建新模板信息填写窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelSaveDlg.cpp">
+      <Filter>扫描模板制作窗口\保存模板窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUpLoad.cpp">
+      <Filter>文件上传</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>文件上传</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\md5.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFileThread.cpp">
+      <Filter>文件上传</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>登录</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ScanTool.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ScanTool.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ScanTool.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

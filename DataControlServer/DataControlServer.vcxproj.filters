@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="global">
+      <UniqueIdentifier>{58ea887b-6944-4b24-8488-55482cf8792b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LOG">
+      <UniqueIdentifier>{9880cd64-ad71-496a-a1b2-447e4811a9c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="解压">
+      <UniqueIdentifier>{c1f60101-c44e-46ff-bcc1-696ba9157449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="上传HTTP服务">
+      <UniqueIdentifier>{b270a00e-8dd0-48fb-8470-3e358997c1a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="转码">
+      <UniqueIdentifier>{b22b3dbd-858c-43f4-8423-dade9ed77694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="文件接收管理">
+      <UniqueIdentifier>{e83b6a92-81fe-4fc6-b544-884cc9e7b9d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="命令管理">
+      <UniqueIdentifier>{f3dbd632-aba5-4a58-9733-49de114fc895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="扫描端鉴权及请求处理">
+      <UniqueIdentifier>{ac359fbc-b236-40c1-8cd4-6f614798ed54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExamServerMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetOperatorDll.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>LOG</Filter>
+    </ClInclude>
+    <ClInclude Include="SysSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DCSDef.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Net_Cmd_Protocol.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="DecompressThread.h">
+      <Filter>解压</Filter>
+    </ClInclude>
+    <ClInclude Include="SendToHttpThread.h">
+      <Filter>上传HTTP服务</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCodeConvert.h">
+      <Filter>转码</Filter>
+    </ClInclude>
+    <ClInclude Include="ListPaperUser.h">
+      <Filter>文件接收管理</Filter>
+    </ClInclude>
+    <ClInclude Include="PaperRecvMgr.h">
+      <Filter>文件接收管理</Filter>
+    </ClInclude>
+    <ClInclude Include="PaperUser.h">
+      <Filter>文件接收管理</Filter>
+    </ClInclude>
+    <ClInclude Include="NetCmdMgr.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="ListUser.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUser.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="NetIoBuffer.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="NetIoSendBuffer.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="Mission.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="MissionFactory.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="MissionMgr.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="ListMission.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="MissionHandleMgr.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="UserMgr.h">
+      <Filter>命令管理</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanResquestHandler.h">
+      <Filter>扫描端鉴权及请求处理</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ExamServerMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="SysSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DecompressThread.cpp">
+      <Filter>解压</Filter>
+    </ClCompile>
+    <ClCompile Include="SendToHttpThread.cpp">
+      <Filter>上传HTTP服务</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCodeConvert.cpp">
+      <Filter>转码</Filter>
+    </ClCompile>
+    <ClCompile Include="ListPaperUser.cpp">
+      <Filter>文件接收管理</Filter>
+    </ClCompile>
+    <ClCompile Include="PaperRecvMgr.cpp">
+      <Filter>文件接收管理</Filter>
+    </ClCompile>
+    <ClCompile Include="PaperUser.cpp">
+      <Filter>文件接收管理</Filter>
+    </ClCompile>
+    <ClCompile Include="NetCmdMgr.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="ListUser.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUser.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="NetIoBuffer.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="NetIoSendBuffer.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="MissionFactory.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="MissionMgr.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="ListMission.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="MissionHandleMgr.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="UserMgr.cpp">
+      <Filter>命令管理</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanResquestHandler.cpp">
+      <Filter>扫描端鉴权及请求处理</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
